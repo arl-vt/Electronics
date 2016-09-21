@@ -1,5 +1,5 @@
 /* %%%%%%%%%%%%  DIGITAL OUTPUT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- * ------------Blink Blue LEd on LaunchPAd
+ * ------------Blink Blue LEd on LaunchPAd - TM4C123
  * */
 #include <stdint.h>
 #include <stdbool.h>
