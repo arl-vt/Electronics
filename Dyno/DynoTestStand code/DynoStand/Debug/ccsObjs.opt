@@ -1,0 +1,1 @@
+"./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd" -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 

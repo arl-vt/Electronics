@@ -1,0 +1,359 @@
+/*
+ * pinout.c
+ *
+ *  Created on: Aug 24, 2016
+ *      Author: thpesek
+ */
+
+
+
+
+//*****************************************************************************
+//
+// Configure the device pins for different signals
+//
+// Copyright (C) 2014 Texas Instruments Incorporated - http://www.ti.com/
+//
+//
+//  Redistribution and use in source and binary forms, with or without
+//  modification, are permitted provided that the following conditions
+//  are met:
+//
+//    Redistributions of source code must retain the above copyright
+//    notice, this list of conditions and the following disclaimer.
+//
+//    Redistributions in binary form must reproduce the above copyright
+//    notice, this list of conditions and the following disclaimer in the
+//    documentation and/or other materials provided with the
+//    distribution.
+//
+//    Neither the name of Texas Instruments Incorporated nor the names of
+//    its contributors may be used to endorse or promote products derived
+//    from this software without specific prior written permission.
+//
+//  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+//  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+//  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+//  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+//  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+//  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+//  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+//  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+//  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+//  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+//  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+//*****************************************************************************
+
+// This file was automatically generated on August 24, 2016 at 10:43:51 AM EDT
+// by TI PinMux version
+//
+//*****************************************************************************
+
+#include <stdbool.h>
+#include <stdint.h>
+#include "inc/hw_gpio.h"
+#include "inc/hw_memmap.h"
+#include "inc/hw_types.h"
+#include "driverlib/gpio.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/rom.h"
+#include "driverlib/rom_map.h"
+#include "driverlib/sysctl.h"
+#include "pinout.h"
+
+//*****************************************************************************
+//
+//! \addtogroup pinout_api
+//! @{
+//
+//*****************************************************************************
+
+//*****************************************************************************
+//
+//! Configures the device pins for the customer specific usage.
+//!
+//! \return None.
+//
+//*****************************************************************************
+void
+PinoutSet(void)
+{
+    //
+    // Enable Peripheral Clocks
+    //
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOC);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOE);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOG);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOH);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOK);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOL);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOM);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOP);
+
+    //
+    // Configure the GPIO Pin Mux for PF2
+	// for M0PWM2
+    //
+	MAP_GPIOPinConfigure(GPIO_PF2_M0PWM2);
+	MAP_GPIOPinTypePWM(GPIO_PORTF_BASE, GPIO_PIN_2);
+
+    //
+    // Configure the GPIO Pin Mux for PF1
+	// for M0PWM1
+    //
+	MAP_GPIOPinConfigure(GPIO_PF1_M0PWM1);
+	MAP_GPIOPinTypePWM(GPIO_PORTF_BASE, GPIO_PIN_1);
+
+    //
+    // Configure the GPIO Pin Mux for PE3
+	// for AIN0
+    //
+	MAP_GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_3);
+
+	//
+	// Unlock the Port Pin and Set the Commit Bit
+	//
+	HWREG(GPIO_PORTD_BASE+GPIO_O_LOCK) = GPIO_LOCK_KEY;
+	HWREG(GPIO_PORTD_BASE+GPIO_O_CR)   |= GPIO_PIN_7;
+	HWREG(GPIO_PORTD_BASE+GPIO_O_LOCK) = 0x0;
+
+    //
+    // Configure the GPIO Pin Mux for PD7
+	// for AIN4
+    //
+	MAP_GPIOPinTypeADC(GPIO_PORTD_BASE, GPIO_PIN_7);
+
+    //
+    // Configure the GPIO Pin Mux for PE1
+	// for AIN2
+    //
+	MAP_GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_1);
+
+    //
+    // Configure the GPIO Pin Mux for PE4
+	// for AIN9
+    //
+	MAP_GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_4);
+
+    //
+    // Configure the GPIO Pin Mux for PE5
+	// for AIN8
+    //
+	MAP_GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_5);
+
+    //
+    // Configure the GPIO Pin Mux for PE2
+	// for AIN1
+    //
+	MAP_GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_2);
+
+    //
+    // Configure the GPIO Pin Mux for PE0
+	// for AIN3
+    //
+	MAP_GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_0);
+
+    //
+    // Configure the GPIO Pin Mux for PA0
+	// for CAN0RX
+    //
+	MAP_GPIOPinConfigure(GPIO_PA0_CAN0RX);
+	MAP_GPIOPinTypeCAN(GPIO_PORTA_BASE, GPIO_PIN_0);
+
+    //
+    // Configure the GPIO Pin Mux for PA1
+	// for CAN0TX
+    //
+	MAP_GPIOPinConfigure(GPIO_PA1_CAN0TX);
+	MAP_GPIOPinTypeCAN(GPIO_PORTA_BASE, GPIO_PIN_1);
+
+    //
+    // Configure the GPIO Pin Mux for PK3
+	// for GPIO_PK3
+    //
+	MAP_GPIOPinTypeGPIOOutput(GPIO_PORTK_BASE, GPIO_PIN_3);
+
+    //
+    // Configure the GPIO Pin Mux for PK7
+	// for GPIO_PK7
+    //
+	MAP_GPIOPinTypeGPIOOutput(GPIO_PORTK_BASE, GPIO_PIN_7);
+
+    //
+    // Configure the GPIO Pin Mux for PK6
+	// for GPIO_PK6
+    //
+	MAP_GPIOPinTypeGPIOOutput(GPIO_PORTK_BASE, GPIO_PIN_6);
+
+    //
+    // Configure the GPIO Pin Mux for PH0
+	// for GPIO_PH0
+    //
+	MAP_GPIOPinTypeGPIOOutput(GPIO_PORTH_BASE, GPIO_PIN_0);
+
+    //
+    // Configure the GPIO Pin Mux for PH1
+	// for GPIO_PH1
+    //
+	MAP_GPIOPinTypeGPIOOutput(GPIO_PORTH_BASE, GPIO_PIN_1);
+
+    //
+    // Configure the GPIO Pin Mux for PG1
+	// for GPIO_PG1
+    //
+	MAP_GPIOPinTypeGPIOInput(GPIO_PORTG_BASE, GPIO_PIN_1);
+
+    //
+    // Configure the GPIO Pin Mux for PK1
+	// for GPIO_PK1
+    //
+	MAP_GPIOPinTypeGPIOInput(GPIO_PORTK_BASE, GPIO_PIN_1);
+
+    //
+    // Configure the GPIO Pin Mux for PK2
+	// for GPIO_PK2
+    //
+	MAP_GPIOPinTypeGPIOInput(GPIO_PORTK_BASE, GPIO_PIN_2);
+
+    //
+    // Configure the GPIO Pin Mux for PC7
+	// for GPIO_PC7
+    //
+	MAP_GPIOPinTypeGPIOInput(GPIO_PORTC_BASE, GPIO_PIN_7);
+
+    //
+    // Configure the GPIO Pin Mux for PB5
+	// for GPIO_PB5
+    //
+	MAP_GPIOPinTypeGPIOInput(GPIO_PORTB_BASE, GPIO_PIN_5);
+
+    //
+    // Configure the GPIO Pin Mux for PB4
+	// for GPIO_PB4
+    //
+	MAP_GPIOPinTypeGPIOInput(GPIO_PORTB_BASE, GPIO_PIN_4);
+
+    //
+    // Configure the GPIO Pin Mux for PM1
+	// for GPIO_PM1
+    //
+	MAP_GPIOPinTypeGPIOInput(GPIO_PORTM_BASE, GPIO_PIN_1);
+
+    //
+    // Configure the GPIO Pin Mux for PM2
+	// for GPIO_PM2
+    //
+	MAP_GPIOPinTypeGPIOInput(GPIO_PORTM_BASE, GPIO_PIN_2);
+
+    //
+    // Configure the GPIO Pin Mux for PL4
+	// for T0CCP0
+    //
+	MAP_GPIOPinConfigure(GPIO_PL4_T0CCP0);
+	MAP_GPIOPinTypeTimer(GPIO_PORTL_BASE, GPIO_PIN_4);
+
+    //
+    // Configure the GPIO Pin Mux for PA4
+	// for SSI0XDAT0
+    //
+	MAP_GPIOPinConfigure(GPIO_PA4_SSI0XDAT0);
+	MAP_GPIOPinTypeSSI(GPIO_PORTA_BASE, GPIO_PIN_4);
+
+    //
+    // Configure the GPIO Pin Mux for PA5
+	// for SSI0XDAT1
+    //
+	MAP_GPIOPinConfigure(GPIO_PA5_SSI0XDAT1);
+	MAP_GPIOPinTypeSSI(GPIO_PORTA_BASE, GPIO_PIN_5);
+
+    //
+    // Configure the GPIO Pin Mux for PA3
+	// for SSI0FSS
+    //
+	MAP_GPIOPinConfigure(GPIO_PA3_SSI0FSS);
+	MAP_GPIOPinTypeSSI(GPIO_PORTA_BASE, GPIO_PIN_3);
+
+    //
+    // Configure the GPIO Pin Mux for PA2
+	// for SSI0CLK
+    //
+	MAP_GPIOPinConfigure(GPIO_PA2_SSI0CLK);
+	MAP_GPIOPinTypeSSI(GPIO_PORTA_BASE, GPIO_PIN_2);
+
+    //
+    // Configure the GPIO Pin Mux for PB2
+	// for I2C0SCL
+    //
+	MAP_GPIOPinConfigure(GPIO_PB2_I2C0SCL);
+	MAP_GPIOPinTypeI2CSCL(GPIO_PORTB_BASE, GPIO_PIN_2);
+
+    //
+    // Configure the GPIO Pin Mux for PB3
+	// for I2C0SDA
+    //
+	MAP_GPIOPinConfigure(GPIO_PB3_I2C0SDA);
+	MAP_GPIOPinTypeI2C(GPIO_PORTB_BASE, GPIO_PIN_3);
+
+    //
+    // Configure the GPIO Pin Mux for PP5
+	// for I2C2SCL
+    //
+	MAP_GPIOPinConfigure(GPIO_PP5_I2C2SCL);
+	MAP_GPIOPinTypeI2CSCL(GPIO_PORTP_BASE, GPIO_PIN_5);
+
+    //
+    // Configure the GPIO Pin Mux for PN4
+	// for I2C2SDA
+    //
+	MAP_GPIOPinConfigure(GPIO_PN4_I2C2SDA);
+	MAP_GPIOPinTypeI2C(GPIO_PORTN_BASE, GPIO_PIN_4);
+
+    //
+    // Configure the GPIO Pin Mux for PK4
+	// for I2C3SCL
+    //
+	MAP_GPIOPinConfigure(GPIO_PK4_I2C3SCL);
+	MAP_GPIOPinTypeI2CSCL(GPIO_PORTK_BASE, GPIO_PIN_4);
+
+    //
+    // Configure the GPIO Pin Mux for PK5
+	// for I2C3SDA
+    //
+	MAP_GPIOPinConfigure(GPIO_PK5_I2C3SDA);
+	MAP_GPIOPinTypeI2C(GPIO_PORTK_BASE, GPIO_PIN_5);
+
+    //
+    // Configure the GPIO Pin Mux for PL2
+	// for PHB0
+    //
+	MAP_GPIOPinConfigure(GPIO_PL2_PHB0);
+	MAP_GPIOPinTypeQEI(GPIO_PORTL_BASE, GPIO_PIN_2);
+
+    //
+    // Configure the GPIO Pin Mux for PL3
+	// for IDX0
+    //
+	MAP_GPIOPinConfigure(GPIO_PL3_IDX0);
+	MAP_GPIOPinTypeQEI(GPIO_PORTL_BASE, GPIO_PIN_3);
+
+    //
+    // Configure the GPIO Pin Mux for PL1
+	// for PHA0
+    //
+	MAP_GPIOPinConfigure(GPIO_PL1_PHA0);
+	MAP_GPIOPinTypeQEI(GPIO_PORTL_BASE, GPIO_PIN_1);
+
+}
+
+//*****************************************************************************
+//
+// Close the Doxygen group.
+//! @}
+//
+//*****************************************************************************

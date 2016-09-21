@@ -1,0 +1,22 @@
+/*
+ * thermo.h
+ *
+ *  Created on: Aug 24, 2016
+ *      Author: thpesek
+ */
+
+#ifndef THERMO_H_
+#define THERMO_H_
+
+#define BASE SSI0_BASE
+
+void Setup_SPI(void);
+void ConfigureTC(uint8_t TCnum);
+float ReadTCTemp(uint8_t TCnum);
+float ReadCJTemp(uint8_t TCnum);
+
+
+
+
+
+#endif /* THERMO_H_ */

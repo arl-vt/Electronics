@@ -1,0 +1,21 @@
+/*
+ * ADC.c
+ *
+ *  Created on: Aug 29, 2016
+ *      Author: thpesek
+ *
+ */
+#include "ADC.h"
+void ADCSetup(void){
+	/*
+	 * Sets ADC to sample at 62.5 kHz with ch0 and ch 1 (PE3 and PE2)
+	 */
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC0);
+	ADCClockConfigSet(ADC0_BASE, ADC_CLOCK_SRC_PIOSC| ADC_CLOCK_RATE_QUARTER, 1);
+	ADCHardwareOversampleConfigure(ADC0_BASE,64);
+	ADCSequenceConfigure(ADC0_BASE, 0, ADC_TRIGGER_ALWAYS,0);
+	ADCSequencStepConfigure(ADC0_BASE,0,0,ADC_CTLCH0);
+	ADCSequencStepConfigure(ADC0_BASE,0,1,ADC_CTLCH1);
+	ADCSequenceEnable(ADC0_BASE,0);
+
+}

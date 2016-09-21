@@ -1,0 +1,15 @@
+/*
+ * ADC.c
+ *
+ *  Created on: Aug 29, 2016
+ *      Author: thpesek
+ *
+ */
+
+void ADCSetup(void){
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC0);
+	ADCClockConfigSet(ADC0_BASE, ADC_CLOCK_SRC_PIOSC| ADC_CLOCK_RATE_QUARTER, 1)
+	ADCHardwareOversampleConfigure(ADC0_BASE,64)
+
+}
+

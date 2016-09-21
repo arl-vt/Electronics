@@ -1,0 +1,16 @@
+/*
+ * ADC.c
+ *
+ *  Created on: Aug 29, 2016
+ *      Author: thpesek
+ *
+ */
+
+void ADCSetup(void){
+
+	ADCClockConfigSet(ADC0_BASE, ADC_CLOCK_SRC_PIOSC| ADC_CLOCK_RATE_QUARTER, 60)
+
+	ADCHardwareOversampleConfigure(ADC0_BASE,64)
+
+}
+

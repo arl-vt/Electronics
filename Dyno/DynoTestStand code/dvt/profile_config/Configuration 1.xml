@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_80" class="java.beans.XMLDecoder">
+ <object class="com.ti.dvt.profile.Model" id="Model0">
+  <void property="activities">
+   <void method="add">
+    <object class="com.ti.dvt.profile.ActivityInfo">
+     <void property="name">
+      <string>Profile all Functions for CPU Cycles</string>
+     </void>
+     <void property="propertyDifference">
+      <object class="com.ti.dvt.control.engine.types.properties.util.PropertyDifference" id="PropertyDifference0">
+       <void property="childDifferences">
+        <void method="add">
+         <object class="com.ti.dvt.control.engine.types.properties.util.PropertyDifference" id="PropertyDifference1">
+          <void property="childDifferences">
+           <void method="add">
+            <object class="com.ti.dvt.control.engine.types.properties.util.PropertyDifference">
+             <void property="name">
+              <string>Profile TI Libraries</string>
+             </void>
+             <void property="refValue">
+              <boolean>false</boolean>
+             </void>
+             <void property="srcValue">
+              <boolean>true</boolean>
+             </void>
+            </object>
+           </void>
+          </void>
+          <void property="name">
+           <string>Collection Options</string>
+          </void>
+         </object>
+        </void>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="name">
+   <string>Configuration 1</string>
+  </void>
+  <void property="targetType">
+   <string>1d6e0</string>
+  </void>
+ </object>
+</java>

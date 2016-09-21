@@ -1,0 +1,13 @@
+/*
+ * ADC.c
+ *
+ *  Created on: Aug 29, 2016
+ *      Author: thpesek
+ *
+ */
+
+void ADCSetup(void){
+
+
+}
+

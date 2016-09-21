@@ -1,0 +1,2053 @@
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 83: error #102: "temp0" has already been declared in the current scope
+"../main.c", line 86: error #102: "temp1" has already been declared in the current scope
+"../main.c", line 89: error #102: "temp2" has already been declared in the current scope
+"../main.c", line 92: error #102: "temp3" has already been declared in the current scope
+"../main.c", line 97: warning #112-D: statement is unreachable
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 97: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'QEI.obj' failed
+"../QEI.c", line 13: warning #225-D: function "QEIConfigure" declared implicitly
+"../QEI.c", line 13: error #20: identifier "QWI0_BASE" is undefined
+"../QEI.c", line 13: error #20: identifier "QEI_CONFIG_CAPTURE_A" is undefined
+"../QEI.c", line 13: error #29: expected an expression
+"../QEI.c", line 14: error #66: expected a ";"
+4 errors detected in the compilation of "../QEI.c".
+gmake: *** [QEI.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'QEI.obj' failed
+"../QEI.c", line 12: warning #225-D: function "MAP_SysCtlPeripheralEnable" declared implicitly
+"../QEI.c", line 12: error #20: identifier "SYSCTL_PERIPH_QEI0" is undefined
+"../QEI.c", line 13: warning #225-D: function "QEIConfigure" declared implicitly
+"../QEI.c", line 13: error #20: identifier "QWI0_BASE" is undefined
+"../QEI.c", line 13: error #20: identifier "QEI_CONFIG_CAPTURE_A" is undefined
+"../QEI.c", line 13: error #20: identifier "QEI_CONFIG_CAPTURE_B" is undefined
+"../QEI.c", line 13: error #20: identifier "QEI_CONFIG_NO_RESET" is undefined
+"../QEI.c", line 13: error #20: identifier "QEI_CONFIG_QUADRATURE" is undefined
+"../QEI.c", line 14: warning #225-D: function "QEIVelocityConfigure" declared implicitly
+"../QEI.c", line 14: error #20: identifier "QEI0_BASE" is undefined
+"../QEI.c", line 14: error #20: identifier "QEI_BELDIV_1" is undefined
+"../QEI.c", line 15: error #66: expected a ";"
+"../QEI.c", line 18: error #20: identifier "int32_t" is undefined
+"../QEI.c", line 19: warning #225-D: function "QEIPositionGet" declared implicitly
+"../QEI.c", line 19: error #20: identifier "QEI0_BASE" is undefined
+"../QEI.c", line 23: error #20: identifier "int32_t" is undefined
+"../QEI.c", line 24: warning #225-D: function "QEIVelocityGet" declared implicitly
+"../QEI.c", line 24: error #20: identifier "QEI0_BASE" is undefined
+"../QEI.c", line 24: error #18: expected a ")"
+"../QEI.c", line 24: warning #112-D: statement is unreachable
+"../QEI.c", line 24: error #29: expected an expression
+"../QEI.c", line 26: error #66: expected a ";"
+16 errors detected in the compilation of "../QEI.c".
+gmake: *** [QEI.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'QEI.obj' failed
+"../QEI.c", line 9: fatal error #13: expected a file name
+1 catastrophic error detected in the compilation of "../QEI.c".
+Compilation terminated.
+gmake: *** [QEI.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'QEI.obj' failed
+"../QEI.c", line 9: fatal error #13: expected a file name
+1 catastrophic error detected in the compilation of "../QEI.c".
+Compilation terminated.
+gmake: *** [QEI.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'QEI.obj' failed
+"../QEI.c", line 9: fatal error #13: expected a file name
+1 catastrophic error detected in the compilation of "../QEI.c".
+Compilation terminated.
+gmake: *** [QEI.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'QEI.obj' failed
+"../QEI.c", line 9: fatal error #13: expected a file name
+1 catastrophic error detected in the compilation of "../QEI.c".
+Compilation terminated.
+gmake: *** [QEI.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'QEI.obj' failed
+"../QEI.c", line 13: error #20: identifier "QWI0_BASE" is undefined
+"../QEI.c", line 13: error #20: identifier "QEI_CONFIG_CAPTURE_B" is undefined
+"../QEI.c", line 14: error #20: identifier "QEI_BELDIV_1" is undefined
+"../QEI.c", line 15: error #66: expected a ";"
+"../QEI.c", line 24: error #18: expected a ")"
+"../QEI.c", line 24: warning #112-D: statement is unreachable
+"../QEI.c", line 24: error #29: expected an expression
+"../QEI.c", line 26: error #66: expected a ";"
+7 errors detected in the compilation of "../QEI.c".
+gmake: *** [QEI.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'QEI.obj' failed
+"../QEI.c", line 13: error #20: identifier "QEI_CONFIG_CAPTURE_B" is undefined
+"../QEI.c", line 14: error #20: identifier "QEI_BELDIV_1" is undefined
+"../QEI.c", line 15: error #66: expected a ";"
+"../QEI.c", line 24: error #18: expected a ")"
+"../QEI.c", line 24: warning #112-D: statement is unreachable
+"../QEI.c", line 24: error #29: expected an expression
+"../QEI.c", line 26: error #66: expected a ";"
+6 errors detected in the compilation of "../QEI.c".
+gmake: *** [QEI.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'QEI.obj' failed
+"../QEI.c", line 13: error #20: identifier "QEI_CONFIG_CAPTURE_B" is undefined
+"../QEI.c", line 14: error #20: identifier "QEI_BELDIV_1" is undefined
+"../QEI.c", line 24: error #18: expected a ")"
+"../QEI.c", line 24: warning #112-D: statement is unreachable
+"../QEI.c", line 24: error #29: expected an expression
+"../QEI.c", line 26: error #66: expected a ";"
+5 errors detected in the compilation of "../QEI.c".
+gmake: *** [QEI.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'QEI.obj' failed
+"../QEI.c", line 14: error #20: identifier "QEI_BELDIV_1" is undefined
+1 error detected in the compilation of "../QEI.c".
+gmake: *** [QEI.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'main.obj' failed
+"../main.c", line 70: error #20: identifier "EncPos" is undefined
+"../main.c", line 70: error #20: identifier "EncVel" is undefined
+"../main.c", line 102: warning #112-D: statement is unreachable
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'main.obj' failed
+"../main.c", line 71: error #20: identifier "EncPos" is undefined
+"../main.c", line 103: warning #112-D: statement is unreachable
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'main.obj' failed
+"../main.c", line 69: error #20: identifier "startup" is undefined
+"../main.c", line 70: error #66: expected a ";"
+"../main.c", line 105: warning #12-D: parsing restarts here after previous syntax error
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'main.obj' failed
+"../main.c", line 69: warning #176-D: expression has no effect
+"../main.c", line 73: error #20: identifier "EncPos" is undefined
+"../main.c", line 105: warning #112-D: statement is unreachable
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 69: warning #176-D: expression has no effect
+"../main.c", line 73: warning #225-D: function "EncPos" declared implicitly
+"../main.c", line 105: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ EncPos    ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "DynoStand.out" not built
+
+>> Compilation failure
+makefile:145: recipe for target 'DynoStand.out' failed
+gmake: *** [DynoStand.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 69: warning #176-D: expression has no effect
+"../main.c", line 105: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'QEI.obj' failed
+"../QEI.c", line 21: error #20: identifier "QEI_BASE" is undefined
+1 error detected in the compilation of "../QEI.c".
+gmake: *** [QEI.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 105: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 105: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 105: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+"../QEI.c", line 21: warning #225-D: function "QEIDirectionGET" declared implicitly
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined       first referenced
+  symbol             in file     
+ ---------       ----------------
+ QEIDirectionGET ./QEI.obj       
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "DynoStand.out" not built
+
+>> Compilation failure
+makefile:145: recipe for target 'DynoStand.out' failed
+gmake: *** [DynoStand.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+'Finished building: ../QEI.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 13: warning #225-D: function "MAP_SysCtlPeripheralEnable" declared implicitly
+"../ADC.c", line 13: error #20: identifier "SYSCTL_PERIPH_ADC0" is undefined
+"../ADC.c", line 14: warning #225-D: function "ADCClockConfigSet" declared implicitly
+"../ADC.c", line 14: error #20: identifier "ADC0_BASE" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_SRC_PIOSC" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 15: warning #225-D: function "ADCHardwareOversampleConfigure" declared implicitly
+"../ADC.c", line 16: warning #225-D: function "ADCSequenceConfigure" declared implicitly
+"../ADC.c", line 16: error #20: identifier "ADC_TRIGGER_ALWAYS" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+"../ADC.c", line 19: warning #225-D: function "ADCSequenceEnable" declared implicitly
+7 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+"../main.c", line 75: warning #225-D: function "ADCSetup" declared implicitly
+"../main.c", line 77: warning #225-D: function "ADCINTStatus" declared implicitly
+"../main.c", line 79: warning #225-D: function "ADCSequenceDataGet" declared implicitly
+"../main.c", line 80: warning #225-D: function "UARTPrintf" declared implicitly
+"../main.c", line 80: error #20: identifier "reconstructed" is undefined
+"../main.c", line 81: error #66: expected a ";"
+"../main.c", line 111: warning #112-D: statement is unreachable
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+'Building file: ../thermo.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="thermo.d"  "../thermo.c"
+"../thermo.c", line 8: warning #14-D: extra text after expected end of preprocessing directive
+"../thermo.c", line 80: warning #994-D: missing return statement at end of non-void function "Get_Temperature"
+'Finished building: ../thermo.c'
+' '
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 13: warning #225-D: function "MAP_SysCtlPeripheralEnable" declared implicitly
+"../ADC.c", line 13: error #20: identifier "SYSCTL_PERIPH_ADC0" is undefined
+"../ADC.c", line 14: warning #225-D: function "ADCClockConfigSet" declared implicitly
+"../ADC.c", line 14: error #20: identifier "ADC0_BASE" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_SRC_PIOSC" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 15: warning #225-D: function "ADCHardwareOversampleConfigure" declared implicitly
+"../ADC.c", line 16: warning #225-D: function "ADCSequenceConfigure" declared implicitly
+"../ADC.c", line 16: error #20: identifier "ADC_TRIGGER_ALWAYS" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+"../ADC.c", line 19: warning #225-D: function "ADCSequenceEnable" declared implicitly
+7 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 75: warning #225-D: function "ADCSetup" declared implicitly
+"../main.c", line 77: warning #225-D: function "ADCINTStatus" declared implicitly
+"../main.c", line 79: warning #225-D: function "ADCSequenceDataGet" declared implicitly
+"../main.c", line 80: warning #225-D: function "UARTPrintf" declared implicitly
+"../main.c", line 111: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 13: warning #225-D: function "MAP_SysCtlPeripheralEnable" declared implicitly
+"../ADC.c", line 13: error #20: identifier "SYSCTL_PERIPH_ADC0" is undefined
+"../ADC.c", line 14: warning #225-D: function "ADCClockConfigSet" declared implicitly
+"../ADC.c", line 14: error #20: identifier "ADC0_BASE" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_SRC_PIOSC" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 15: warning #225-D: function "ADCHardwareOversampleConfigure" declared implicitly
+"../ADC.c", line 16: warning #225-D: function "ADCSequenceConfigure" declared implicitly
+"../ADC.c", line 16: error #20: identifier "ADC_TRIGGER_ALWAYS" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+"../ADC.c", line 19: warning #225-D: function "ADCSequenceEnable" declared implicitly
+7 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+"../main.c", line 70: warning #225-D: function "ADCSetup" declared implicitly
+"../main.c", line 71: error #68: expected a "}"
+"../main.c", line 72: error #171: expected a declaration
+"../main.c", line 111: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 112: error #171: expected a declaration
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 13: warning #225-D: function "MAP_SysCtlPeripheralEnable" declared implicitly
+"../ADC.c", line 13: error #20: identifier "SYSCTL_PERIPH_ADC0" is undefined
+"../ADC.c", line 14: warning #225-D: function "ADCClockConfigSet" declared implicitly
+"../ADC.c", line 14: error #20: identifier "ADC0_BASE" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_SRC_PIOSC" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 15: warning #225-D: function "ADCHardwareOversampleConfigure" declared implicitly
+"../ADC.c", line 16: warning #225-D: function "ADCSequenceConfigure" declared implicitly
+"../ADC.c", line 16: error #20: identifier "ADC_TRIGGER_ALWAYS" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+"../ADC.c", line 19: warning #225-D: function "ADCSequenceEnable" declared implicitly
+7 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+"../main.c", line 72: error #68: expected a "}"
+"../main.c", line 73: error #171: expected a declaration
+"../main.c", line 112: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 113: error #171: expected a declaration
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 13: warning #225-D: function "MAP_SysCtlPeripheralEnable" declared implicitly
+"../ADC.c", line 13: error #20: identifier "SYSCTL_PERIPH_ADC0" is undefined
+"../ADC.c", line 14: warning #225-D: function "ADCClockConfigSet" declared implicitly
+"../ADC.c", line 14: error #20: identifier "ADC0_BASE" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_SRC_PIOSC" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 15: warning #225-D: function "ADCHardwareOversampleConfigure" declared implicitly
+"../ADC.c", line 16: warning #225-D: function "ADCSequenceConfigure" declared implicitly
+"../ADC.c", line 16: error #20: identifier "ADC_TRIGGER_ALWAYS" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+"../ADC.c", line 19: warning #225-D: function "ADCSequenceEnable" declared implicitly
+7 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 78: warning #225-D: function "ADCINTStatus" declared implicitly
+"../main.c", line 80: warning #169-D: argument of type "uint32_t (*)[2]" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 81: warning #225-D: function "UARTPrintf" declared implicitly
+"../main.c", line 112: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 13: warning #225-D: function "SysCtlPeripheralEnable" declared implicitly
+"../ADC.c", line 13: error #20: identifier "SYSCTL_PERIPH_ADC0" is undefined
+"../ADC.c", line 14: warning #225-D: function "ADCClockConfigSet" declared implicitly
+"../ADC.c", line 14: error #20: identifier "ADC0_BASE" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_SRC_PIOSC" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 15: warning #225-D: function "ADCHardwareOversampleConfigure" declared implicitly
+"../ADC.c", line 16: warning #225-D: function "ADCSequenceConfigure" declared implicitly
+"../ADC.c", line 16: error #20: identifier "ADC_TRIGGER_ALWAYS" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+"../ADC.c", line 19: warning #225-D: function "ADCSequenceEnable" declared implicitly
+7 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 13: warning #225-D: function "SysCtlPeripheralEnable" declared implicitly
+"../ADC.c", line 13: error #20: identifier "SYSCTL_PERIPH_ADC0" is undefined
+"../ADC.c", line 14: warning #225-D: function "ADCClockConfigSet" declared implicitly
+"../ADC.c", line 14: error #20: identifier "ADC0_BASE" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_SRC_PIOSC" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 15: warning #225-D: function "ADCHardwareOversampleConfigure" declared implicitly
+"../ADC.c", line 16: warning #225-D: function "ADCSequenceConfigure" declared implicitly
+"../ADC.c", line 16: error #20: identifier "ADC_TRIGGER_ALWAYS" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+"../ADC.c", line 19: warning #225-D: function "ADCSequenceEnable" declared implicitly
+7 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 13: warning #225-D: function "SysCtlPeripheralEnable" declared implicitly
+"../ADC.c", line 13: error #20: identifier "SYSCTL_PERIPH_ADC0" is undefined
+"../ADC.c", line 14: warning #225-D: function "ADCClockConfigSet" declared implicitly
+"../ADC.c", line 14: error #20: identifier "ADC0_BASE" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_SRC_PIOSC" is undefined
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 15: warning #225-D: function "ADCHardwareOversampleConfigure" declared implicitly
+"../ADC.c", line 16: warning #225-D: function "ADCSequenceConfigure" declared implicitly
+"../ADC.c", line 16: error #20: identifier "ADC_TRIGGER_ALWAYS" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+"../ADC.c", line 19: warning #225-D: function "ADCSequenceEnable" declared implicitly
+7 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+'Building file: ../thermo.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="thermo.d"  "../thermo.c"
+"../thermo.c", line 80: warning #994-D: missing return statement at end of non-void function "Get_Temperature"
+'Finished building: ../thermo.c'
+' '
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+3 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+3 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+3 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+2 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_QUARTER" is undefined
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+3 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+2 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+"../ADC.c", line 17: error #20: identifier "ADC_CTLCH0" is undefined
+"../ADC.c", line 18: error #20: identifier "ADC_CTLCH1" is undefined
+2 errors detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+"../ADC.c", line 17: warning #225-D: function "ADCSequencStepConfigure" declared implicitly
+'Finished building: ../ADC.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined               first referenced
+  symbol                     in file     
+ ---------               ----------------
+ ADCINTStatus            ./main.obj      
+ ADCSequencStepConfigure ./ADC.obj       
+ UARTPrintf              ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "DynoStand.out" not built
+
+>> Compilation failure
+makefile:146: recipe for target 'DynoStand.out' failed
+gmake: *** [DynoStand.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 78: warning #225-D: function "ADCINTStatus" declared implicitly
+"../main.c", line 80: warning #169-D: argument of type "uint32_t (*)[2]" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 81: warning #225-D: function "UARTPrintf" declared implicitly
+"../main.c", line 112: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined               first referenced
+  symbol                     in file     
+ ---------               ----------------
+ ADCINTStatus            ./main.obj      
+ ADCSequencStepConfigure ./ADC.obj       
+ UARTPrintf              ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "DynoStand.out" not built
+
+>> Compilation failure
+makefile:146: recipe for target 'DynoStand.out' failed
+gmake: *** [DynoStand.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+'Finished building: ../ADC.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined    first referenced
+  symbol          in file     
+ ---------    ----------------
+ ADCINTStatus ./main.obj      
+ UARTPrintf   ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "DynoStand.out" not built
+
+>> Compilation failure
+makefile:146: recipe for target 'DynoStand.out' failed
+gmake: *** [DynoStand.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 79: warning #225-D: function "ADCINTStatus" declared implicitly
+"../main.c", line 81: warning #169-D: argument of type "uint32_t (*)[2]" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 113: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined    first referenced
+  symbol          in file     
+ ---------    ----------------
+ ADCINTStatus ./main.obj      
+
+error #10234-D: unresolved symbols remain
+
+error #10010: errors encountered during linking; "DynoStand.out" not built
+>> Compilation failure
+makefile:146: recipe for target 'DynoStand.out' failed
+gmake: *** [DynoStand.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 81: warning #169-D: argument of type "uint32_t (*)[2]" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 113: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+'Finished building: ../ADC.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+"../main.c", line 73: warning #225-D: function "ROM_SysCtlPeripheralEnable" declared implicitly
+"../main.c", line 74: warning #225-D: function "TimerClockSourceSet" declared implicitly
+"../main.c", line 74: error #20: identifier "TIMER_CLOCK_PIOSC" is undefined
+"../main.c", line 75: warning #225-D: function "TimerConfigure" declared implicitly
+"../main.c", line 75: error #20: identifier "TIMER_CFG_PERIODIC_UP" is undefined
+"../main.c", line 84: warning #169-D: argument of type "uint32_t (*)[2]" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 85: warning #225-D: function "TimerValueGet" declared implicitly
+"../main.c", line 85: error #20: identifier "TIMER_A" is undefined
+"../main.c", line 116: warning #112-D: statement is unreachable
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 85: warning #169-D: argument of type "uint32_t (*)[2]" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 117: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 85: warning #169-D: argument of type "int32_t (*)[2]" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 117: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+"../main.c", line 89: error #66: expected a ";"
+"../main.c", line 91: error #29: expected an expression
+"../main.c", line 91: error #18: expected a ")"
+"../main.c", line 123: warning #112-D: statement is unreachable
+"../main.c", line 79: warning #552-D: variable "NewTime" was set but never used
+"../main.c", line 80: warning #179-D: variable "OldTime" was declared but never referenced
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+"../main.c", line 89: error #66: expected a ";"
+"../main.c", line 91: error #29: expected an expression
+"../main.c", line 91: error #18: expected a ")"
+"../main.c", line 123: warning #112-D: statement is unreachable
+"../main.c", line 79: warning #552-D: variable "NewTime" was set but never used
+"../main.c", line 80: warning #179-D: variable "OldTime" was declared but never referenced
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+"../main.c", line 89: error #66: expected a ";"
+"../main.c", line 91: error #29: expected an expression
+"../main.c", line 91: error #18: expected a ")"
+"../main.c", line 123: warning #112-D: statement is unreachable
+"../main.c", line 79: warning #552-D: variable "NewTime" was set but never used
+"../main.c", line 80: warning #179-D: variable "OldTime" was declared but never referenced
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+"../main.c", line 89: error #66: expected a ";"
+"../main.c", line 90: warning #169-D: argument of type "int32_t (*)[2]" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 123: warning #112-D: statement is unreachable
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 90: warning #169-D: argument of type "int32_t (*)[2]" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 90: warning #169-D: argument of type "int32_t" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 90: warning #169-D: argument of type "int32_t *" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 90: warning #169-D: argument of type "int32_t (*)[2]" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 90: warning #169-D: argument of type "int32_t *" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 90: warning #169-D: argument of type "int32_t *" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 90: warning #169-D: argument of type "int32_t *" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 90: warning #169-D: argument of type "int32_t *" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 90: warning #169-D: argument of type "int32_t *" is incompatible with parameter of type "uint32_t *"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 123: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+"../main.c", line 92: error #20: identifier "SR" is undefined
+"../main.c", line 92: error #18: expected a ")"
+"../main.c", line 92: error #7: unrecognized token
+"../main.c", line 92: error #8: missing closing quote
+"../main.c", line 94: error #66: expected a ";"
+"../main.c", line 124: warning #112-D: statement is unreachable
+"../main.c", line 80: warning #552-D: variable "OldTime" was set but never used
+5 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 124: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+'Finished building: ../ADC.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"../ADC.c", line 14: error #20: identifier "ADC_CLOCK_RATE_WHOLE" is undefined
+1 error detected in the compilation of "../ADC.c".
+gmake: *** [ADC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+'Finished building: ../ADC.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+'Finished building: ../ADC.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+'Finished building: ../ADC.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+"../main.c", line 91: error #18: expected a ")"
+"../main.c", line 125: warning #112-D: statement is unreachable
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 125: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+'Finished building: ../ADC.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="Y:/Documents/CCS Stuff/DynoTestStand/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 126: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: DynoStand.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_warning=225 --display_error_number --diag_wrap=off --abi=eabi -z -m"DynoStand.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/arm_15.12.2.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="DynoStand_linkInfo.xml" --rom_model -o "DynoStand.out" "./ADC.obj" "./QEI.obj" "./main.obj" "./pinout.obj" "./thermo.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: DynoStand.out'
+' '
+
+**** Build Finished ****

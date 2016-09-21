@@ -1,0 +1,113 @@
+/*
+ * main.c
+ */
+
+
+#include <stdint.h>
+#include "inc/hw_nvic.h"
+#include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_ints.h"
+#include "inc/hw_gpio.h"
+#include "inc/hw_memmap.h"
+#include "inc/hw_types.h"
+#include "driverlib/debug.h"
+#include "driverlib/gpio.h"
+#include "driverlib/interrupt.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/rom.h"
+#include "driverlib/rom_map.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/fpu.h"
+#include "pinout.h"
+#include "driverlib/uart.h"
+#include "utils/uartstdio.h"
+#include "utils/uartstdio.c"
+#include "thermo.h"
+#include "QEI.h"
+#include "ADC.h"
+
+/*
+ * --------------Global Variables-------------
+ */
+ uint32_t g_ui32SysClock;
+
+
+
+
+ /*
+  * -------------Main Loop--------------------
+  */
+
+
+int main(void) {
+	
+	SysCtlMOSCConfigSet(SYSCTL_MOSC_HIGHFREQ);
+	g_ui32SysClock = MAP_SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN | SYSCTL_USE_PLL |SYSCTL_CFG_VCO_480), 120000000);
+
+	PinoutSet();
+    //
+    // Enable UART0
+    //
+   SysCtlPeripheralEnable(SYSCTL_PERIPH_UART2);
+	UARTStdioConfig(2, 115200, g_ui32SysClock);
+
+	FPUEnable();
+	FPULazyStackingEnable();
+	/*UARTprintf("starting SPI\n");
+	Setup_SPI();
+	SysCtlDelay(120000);
+	ConfigureTC(0);
+	ConfigureTC(1);
+	ConfigureTC(2);
+	ConfigureTC(3);
+	ConfigureTC(4);
+	ConfigureTC(5);
+	ConfigureTC(6);
+	ConfigureTC(7);
+*/
+
+	//EncStartup();
+	ADCSetup();
+	uint32_t ADCValue[2];
+	while(1){
+	//SysCtlDelay(12000);
+
+	//UARTprintf("Enc POS = %6d : Enc Vel  %6d\n",EncPOS(),EncVel());
+
+while(!ADCINTStatus(ADC0_BASE,0,false)){
+
+	ADCSequenceDataGet(ADC0_BASE,0,&ADCValue);
+	UARTPrintf("ADC0 = %6d, ADC1 = %d6\n",ADCValue[0], ADCValue[1]);
+}
+
+	/*
+	float temp0 = ReadTCTemp(0);
+	UARTprintf("TC0 = %d\n", (int) (temp0*100));
+
+	float temp1 = ReadTCTemp(1);
+	UARTprintf("TC1 = %d\n", (int) (temp1*100));
+
+	float temp2 = ReadTCTemp(2);
+	UARTprintf("TC2 = %d\n", (int) (temp2*100));
+
+	float temp3 = ReadTCTemp(3);
+
+	UARTprintf("TC3 = %d\n\n", (int) (temp3*100));
+
+	float temp4 = ReadTCTemp(4);
+	UARTprintf("TC4 = %d\n", (int) (temp4*100));
+
+	float temp5 = ReadTCTemp(5);
+	UARTprintf("TC5 = %d\n", (int) (temp5*100));
+
+	float temp6 = ReadTCTemp(6);
+	UARTprintf("TC6 = %d\n", (int) (temp6*100));
+
+	float temp7 = ReadTCTemp(7);
+	UARTprintf("TC7 = %d\n\n", (int) (temp7*100));
+*/
+}
+
+	return 0;
+}

@@ -1,0 +1,26 @@
+/*
+ * QEI.c
+ *
+ *  Created on: Aug 26, 2016
+ *      Author: thpesek
+ */
+
+
+#include "QEI.h"
+
+void startup(void){
+	MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_QEI0);
+	QEIConfigure(QEI0_BASE,QEI_CONFIG_CAPTURE_A | QEI_CONFIG_CAPTURE_B | QEI_CONFIG_NO_RESET | QEI_CONFIG_QUADRATURE,2000000);
+	QEIVelocityConfigure(QEI0_BASE,QEI_BELDIV_1,500)
+	QEIVelocityEnable(QEI0_BASE);
+}
+
+int32_t EncPOS(void){
+	return QEIPositionGet(QEI0_BASE);
+}
+
+
+int32_t EncVel(void){
+	return QEIVelocityGet(QEI0_BASE;)
+
+}
