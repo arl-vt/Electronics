@@ -10,7 +10,7 @@
 
 #define USER_LED1  GPIO_PIN_1  //Red
 #define USER_LED2  GPIO_PIN_2  //Blue
-#define USER_SW1  GPIO_PIN_4   //SW1
+#define  USER_SW1  GPIO_PIN_4   //SW1
 #define USER_SW2  GPIO_PIN_0  //SW2, requires unlocking
 
 int main(void)
