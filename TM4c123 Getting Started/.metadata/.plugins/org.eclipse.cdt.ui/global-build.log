@@ -682,3 +682,2014 @@ gmake: Nothing to be done for 'all'.
 gmake: Nothing to be done for 'all'.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building file: ../tm4c123gh6pm_startup_ccs.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d"  "../tm4c123gh6pm_startup_ccs.c"
+'Finished building: ../tm4c123gh6pm_startup_ccs.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: pwmTest.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 56: error #156: expression must have struct or union type
+"../main.c", line 56: error #167: too few arguments in function call
+"../main.c", line 60: warning #225-D: function "ROM_PWMPulseWidthSet" declared implicitly
+"../main.c", line 61: warning #225-D: function "ROM_PWMOutputState" declared implicitly
+"../main.c", line 62: warning #225-D: function "ROM_PWMGenEnable" declared implicitly
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 56: error #20: identifier "PWM_GEN_MODE_DOWM" is undefined
+"../main.c", line 60: warning #225-D: function "ROM_PWMPulseWidthSet" declared implicitly
+"../main.c", line 61: warning #225-D: function "ROM_PWMOutputState" declared implicitly
+"../main.c", line 62: warning #225-D: function "ROM_PWMGenEnable" declared implicitly
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 60: warning #225-D: function "ROM_PWMPulseWidthSet" declared implicitly
+"../main.c", line 61: warning #225-D: function "ROM_PWMOutputState" declared implicitly
+"../main.c", line 62: warning #225-D: function "ROM_PWMGenEnable" declared implicitly
+'Finished building: ../main.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+
+ undefined            first referenced
+  symbol                  in file     
+ ---------            ----------------
+ ROM_PWMGenEnable     ./main.obj      
+ ROM_PWMOutputState   ./main.obj      
+ ROM_PWMPulseWidthSet ./main.obj      
+
+
+>> Compilation failure
+makefile:142: recipe for target 'pwmTest.out' failed
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "pwmTest.out" not built
+gmake: *** [pwmTest.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 19: warning #225-D: function "ROM_SysCtlClockSet" declared implicitly
+"../main.c", line 20: warning #225-D: function "ROM_SysCtlPWMClockSet" declared implicitly
+"../main.c", line 21: warning #225-D: function "ROM_SysCtlPeripheralEnable" declared implicitly
+"../main.c", line 24: warning #225-D: function "ROM_GPIOPinTypePWM" declared implicitly
+"../main.c", line 25: warning #225-D: function "ROM_GPIOPinConfigure" declared implicitly
+"../main.c", line 29: warning #225-D: function "ROM_GPIODirModeSet" declared implicitly
+"../main.c", line 30: warning #225-D: function "ROM_GPIOPadConfigSet" declared implicitly
+"../main.c", line 35: warning #225-D: function "ROM_PWMPulseWidthSet" declared implicitly
+"../main.c", line 36: warning #225-D: function "ROM_PWMOutputState" declared implicitly
+"../main.c", line 37: warning #225-D: function "ROM_PWMGenEnable" declared implicitly
+"../main.c", line 40: warning #225-D: function "ROM_GPIOPinRead" declared implicitly
+"../main.c", line 58: warning #225-D: function "ROM_SysCtlDelay" declared implicitly
+'Finished building: ../main.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+
+ undefined                  first referenced
+  symbol                        in file     
+ ---------                  ----------------
+ ROM_GPIODirModeSet         ./main.obj      
+ ROM_GPIOPadConfigSet       ./main.obj      
+
+ ROM_GPIOPinConfigure       ./main.obj      
+>> Compilation failure
+makefile:142: recipe for target 'pwmTest.out' failed
+ ROM_GPIOPinRead            ./main.obj      
+ ROM_GPIOPinTypePWM         ./main.obj      
+ ROM_PWMGenEnable           ./main.obj      
+ ROM_PWMOutputState         ./main.obj      
+ ROM_PWMPulseWidthSet       ./main.obj      
+ ROM_SysCtlClockSet         ./main.obj      
+ ROM_SysCtlDelay            ./main.obj      
+ ROM_SysCtlPWMClockSet      ./main.obj      
+ ROM_SysCtlPeripheralEnable ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "pwmTest.out" not built
+gmake: *** [pwmTest.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: pwmTest.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 18: warning #179-D: variable "sw1" was declared but never referenced
+'Finished building: ../main.c'
+' '
+'Building target: digitalInput.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"digitalInput.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="digitalInput_linkInfo.xml" --rom_model -o "digitalInput.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: digitalInput.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 23: error #20: identifier "uint_32t" is undefined
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: pwmTest.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: pwmTest.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: pwmTest.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 51: error #18: expected a ")"
+"../main.c", line 79: error #20: identifier "USER_LED" is undefined
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 51: error #18: expected a ")"
+"../main.c", line 79: error #20: identifier "USER_LED" is undefined
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 51: error #18: expected a ")"
+"../main.c", line 79: error #20: identifier "USER_LED" is undefined
+At end of source: error #68: expected a "}"
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 90: error #20: identifier "USER_LED" is undefined
+At end of source: error #68: expected a "}"
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+At end of source: error #68: expected a "}"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+At end of source: error #68: expected a "}"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: pwmTest.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: pwmTest.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building file: ../tm4c123gh6pm_startup_ccs.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d"  "../tm4c123gh6pm_startup_ccs.c"
+'Finished building: ../tm4c123gh6pm_startup_ccs.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 32: error #20: identifier "GPIO_O_LOCK" is undefined
+"../main.c", line 32: error #20: identifier "GPIO_LOCK_KEY" is undefined
+"../main.c", line 33: error #20: identifier "GPIO_O_CR" is undefined
+"../main.c", line 36: error #20: identifier "GPIO_PF0_M1PWM4" is undefined
+"../main.c", line 47: warning #225-D: function "PWMGenConfigure" declared implicitly
+"../main.c", line 47: error #20: identifier "PWM_GEN_2" is undefined
+"../main.c", line 47: error #20: identifier "PWM_GEN_MODE_DOWN" is undefined
+"../main.c", line 47: error #20: identifier "PWM_GEN_MODE_NO_SYNC" is undefined
+"../main.c", line 50: warning #225-D: function "PWMGenPeriodSet" declared implicitly
+"../main.c", line 53: warning #225-D: function "PWMPulseWidthSet" declared implicitly
+"../main.c", line 53: error #20: identifier "PWM_OUT_4" is undefined
+8 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"../main.c", line 27: warning #179-D: variable "period" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "duty" was declared but never referenced
+'Finished building: ../main.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: pwmTest.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: pwmTest.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: pwmTest.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"pwmTest.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="pwmTest_linkInfo.xml" --rom_model -o "pwmTest.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: pwmTest.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 67: error #20: identifier "USER_LED" is undefined
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 71: error #29: expected an expression
+"../main.c", line 71: error #20: identifier "i" is undefined
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 71: error #29: expected an expression
+"../main.c", line 71: error #20: identifier "i" is undefined
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 71: error #29: expected an expression
+"../main.c", line 71: error #20: identifier "i" is undefined
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LedBlink_noTimer ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.3.156" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: SimplePWM.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi -z -m"SimplePWM.map" --stack_size=512 --heap_size=0 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_15.12.1.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="SimplePWM_linkInfo.xml" --rom_model -o "SimplePWM.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: SimplePWM.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project digitalInput ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project pwmTest ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SimplePWM ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****

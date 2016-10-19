@@ -5,7 +5,7 @@
 	<section name="com.ti.ccstudio.project.ui.internal.preferences.DynamicPreferencePageManager">
 	</section>
 	<section name="com.ti.ccstudio.project.ui.internal.wizards.project.ProjectSettingsPage">
-		<item value="devices/tm4c1290ncpdt.xml" key="CCS.TARGET"/>
+		<item value="devices/tm4c123gh6pm.xml" key="CCS.TARGET"/>
 		<item value="C:\ti\ccsv6\ccs_base\common\targetdb\connections\Stellaris_ICDI_Connection.xml" key="CCS.CONNECTION"/>
 		<section name="1">
 			<item value="" key="CCS.TOOL_VERSION"/>
