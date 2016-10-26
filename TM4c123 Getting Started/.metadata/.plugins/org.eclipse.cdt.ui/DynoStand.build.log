@@ -1,0 +1,57 @@
+
+**** Build of configuration Debug for project DynoStand ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="C:/Users/shriya/Documents/Exoskeleton/Electronics/Dyno/DynoTestStand code/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ADC.d"  "../ADC.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'ADC.obj' failed
+"..\ADC.h", line 14: fatal error #1965: cannot open source file "inc/hw_gpio.h"
+1 catastrophic error detected in the compilation of "../ADC.c".
+Compilation terminated.
+gmake: *** [ADC.obj] Error 1
+'Building file: ../QEI.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="C:/Users/shriya/Documents/Exoskeleton/Electronics/Dyno/DynoTestStand code/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="QEI.d"  "../QEI.c"
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'QEI.obj' failed
+"..\QEI.h", line 13: fatal error #1965: cannot open source file "inc/hw_gpio.h"
+1 catastrophic error detected in the compilation of "../QEI.c".
+Compilation terminated.
+gmake: *** [QEI.obj] Error 1
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="C:/Users/shriya/Documents/Exoskeleton/Electronics/Dyno/DynoTestStand code/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+"../main.c", line 7: fatal error #1965: cannot open source file "inc/hw_nvic.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+'Building file: ../pinout.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="C:/Users/shriya/Documents/Exoskeleton/Electronics/Dyno/DynoTestStand code/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="pinout.d"  "../pinout.c"
+
+>> Compilation failure
+subdir_rules.mk:28: recipe for target 'pinout.obj' failed
+"../pinout.c", line 45: fatal error #1965: cannot open source file "inc/hw_gpio.h"
+1 catastrophic error detected in the compilation of "../pinout.c".
+Compilation terminated.
+gmake: *** [pinout.obj] Error 1
+'Building file: ../thermo.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccsv6/tools/compiler/arm_15.12.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/utils" --include_path="C:/Users/shriya/Documents/Exoskeleton/Electronics/Dyno/DynoTestStand code/DynoStand" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/examples/boards/ek-tm4c1294xl/" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111" --include_path="C:/ti/TivaWare_C_Series-2.1.2.111/inc" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --diag_wrap=off --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="thermo.d"  "../thermo.c"
+
+>> Compilation failure
+subdir_rules.mk:35: recipe for target 'thermo.obj' failed
+"..\thermo.h", line 14: fatal error #1965: cannot open source file "inc/hw_gpio.h"
+1 catastrophic error detected in the compilation of "../thermo.c".
+Compilation terminated.
+gmake: *** [thermo.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

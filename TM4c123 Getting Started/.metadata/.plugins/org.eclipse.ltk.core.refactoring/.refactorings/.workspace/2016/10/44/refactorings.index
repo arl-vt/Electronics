@@ -1,3 +1,6 @@
 1477509786776	Delete resource 'Blinky'
 1477509792424	Delete 4 resources
 1477509976309	Delete resource 'Blinky'
+1477514332185	Delete resource 'uart'
+1477514336500	Delete resource 'UART_interrupt'
+1477514585459	Rename resource 'SPI_Output'
