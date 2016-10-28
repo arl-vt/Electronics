@@ -9760,3 +9760,15 @@ The release after Mars (4.5) will no longer support the deprecated usage!
 
 !ENTRY org.eclipse.cdt.core 1 0 2016-10-28 16:06:48.754
 !MESSAGE Indexed 'adc_hardwareAveraging' (2 sources, 8 headers) in 0.089 sec: 471 declarations; 501 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-28 16:12:01.221
+!MESSAGE Indexed 'loadCell' (2 sources, 0 headers) in 0.013 sec: 24 declarations; 118 references; 1 unresolved inclusions; 0 syntax errors; 2 unresolved names (1.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-28 16:12:01.668
+!MESSAGE Indexed 'loadCell' (2 sources, 1 headers) in 0.021 sec: 52 declarations; 142 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-28 16:12:02.787
+!MESSAGE Indexed 'loadCell' (2 sources, 1 headers) in 0.029 sec: 52 declarations; 143 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-28 16:12:33.921
+!MESSAGE Indexed 'loadCell' (2 sources, 1 headers) in 0.014 sec: 52 declarations; 143 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
