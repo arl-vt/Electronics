@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v15.12.3                    
 ******************************************************************************
->> Linked Thu Nov 10 17:41:04 2016
+>> Linked Mon Nov 14 14:43:12 2016
 
 OUTPUT FILE NAME:   <BlinkLED_timer.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 000008cd
@@ -173,7 +173,7 @@ UNDEFED   SHT$$INIT_ARRAY$$Limit
 00000b07  SysCtlDelay                    
 000009f9  SysCtlPeripheralEnable         
 000009c1  SysCtlPeripheralReady          
-000005cb  Timer1IntHandler               
+000005c9  Timer1IntHandler               
 0000086d  TimerConfigure                 
 00000abf  TimerEnable                    
 00000b13  TimerIntClear                  
@@ -220,16 +220,15 @@ ffffffff  __c_args__
 20000210  _unlock                        
 00000925  abort                          
 ffffffff  binit                          
-00000589  configureTimer                 
+00000587  configureTimer                 
 00000975  copy_in                        
 0000092d  exit                           
 00000000  g_pfnVectors                   
-00000565  initializeLED                  
+0000055d  initializeLED                  
 00000541  main                           
 20000214  main_func_sp                   
 00000611  memcpy                         
 000006b5  memset                         
-0000055b  setupClock                     
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -244,10 +243,9 @@ address   name
 0000033d  SysCtlClockGet                 
 0000044d  SysCtlClockSet                 
 00000541  main                           
-0000055b  setupClock                     
-00000565  initializeLED                  
-00000589  configureTimer                 
-000005cb  Timer1IntHandler               
+0000055d  initializeLED                  
+00000587  configureTimer                 
+000005c9  Timer1IntHandler               
 00000611  __aeabi_memcpy                 
 00000611  __aeabi_memcpy4                
 00000611  __aeabi_memcpy8                
@@ -311,4 +309,4 @@ ffffffff  binit
 UNDEFED   SHT$$INIT_ARRAY$$Base          
 UNDEFED   SHT$$INIT_ARRAY$$Limit         
 
-[74 symbols]
+[73 symbols]

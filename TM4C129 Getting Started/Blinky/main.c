@@ -24,6 +24,8 @@ int main(void) {
 //		GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, ~(GPIO_PIN_4));
 //		SysCtlDelay(2000000);
 
+		GPIOPinWrite(GPIO_PORTD_BASE, GPIO_PIN_2, GPIO_PIN_2);
+
 		GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, GPIO_PIN_0);
 		SysCtlDelay(2000000);
 		GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, ~(GPIO_PIN_0));
@@ -42,7 +44,7 @@ void initializeGPIO(){
 //
 //	// Configure GPIO Port of digital output
 //	GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_4);
-
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
 		while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPION)){
 			//wait
@@ -50,4 +52,5 @@ void initializeGPIO(){
 
 		// Configure GPIO Port of digital output
 		GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_0);
+		GPIOPinTypeGPIOOutput(GPIO_PORTD_BASE, GPIO_PIN_2);
 }

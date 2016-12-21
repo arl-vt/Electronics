@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v15.12.3                    
 ******************************************************************************
->> Linked Wed Oct 26 18:03:17 2016
+>> Linked Mon Nov 14 11:52:31 2016
 
 OUTPUT FILE NAME:   <adc_hardwareAveraging.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 00000849
