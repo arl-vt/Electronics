@@ -1,1 +1,2 @@
 DC Motor Interfacing
+Connect 5V, GND, Dir, PWM from Tiva to Servo Amplifier. 
