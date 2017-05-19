@@ -1,0 +1,78 @@
+/*
+ * *****************************************************************************************
+ *                   Control DC Motor - tm4C123											   *
+ * *****************************************************************************************
+ *  Servo Driver: Advanced Motion AZBDC12A8
+ *  			  6A continous, 12A Peak; 20-80V DC input
+ *  			  PWM & Direction pin
+ *
+ *  Input PWM Frequecy: 10-25 KHZ
+ *
+ *  Pin Connections:
+ *  PWM - PF1 (M1PWM5)
+ *  DIRECTION - PB7
+ *  *****************************************************************************************
+ */
+
+#include "driverlib/pin_map.h"
+#include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_gpio.h"
+#include "inc/hw_types.h"
+#include "inc/hw_memmap.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/gpio.h"
+#include "driverlib/pwm.h"
+
+#define MotorPWM GPIO_PIN_1
+#define MotorDirection GPIO_PIN_7
+
+void enableDirectionPin(){
+	   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
+	   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOB)){}
+
+	   GPIOPinTypeGPIOOutput(GPIO_PORTB_BASE, MotorDirection);
+}
+
+void enablePWM(int period){
+		/* PWM clock: systemClock/2 = 20 MHZ */
+	   SysCtlPWMClockSet(SYSCTL_PWMDIV_2);
+
+	    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+	    SysCtlPeripheralEnable(SYSCTL_PERIPH_PWM1); // Module 1 for PF1
+
+	    GPIOPinConfigure(GPIO_PF1_M1PWM5);
+	    GPIOPinTypePWM(GPIO_PORTF_BASE,GPIO_PIN_1);
+	    PWMGenConfigure(PWM1_BASE, PWM_GEN_2, PWM_GEN_MODE_DOWN | PWM_GEN_MODE_NO_SYNC);
+	    PWMGenPeriodSet(PWM1_BASE, PWM_GEN_2, period);
+
+	    // Enable the PWM generator
+	    PWMGenEnable(PWM1_BASE, PWM_GEN_2);
+
+	    // Turn on the Output pins
+	    PWMOutputState(PWM1_BASE, PWM_OUT_5_BIT, true);
+}
+int main(void)
+{
+   uint32_t period = 2000;// (clock /freq = 20MHZ/10KHZ = 2000)
+   uint32_t duty = 0.1*period;    //1.5ms pulse width : 5%
+
+   // Setup the system clock to run at 40 Mhz from PLL with crystal reference
+   SysCtlClockSet(SYSCTL_SYSDIV_5|SYSCTL_USE_PLL|SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
+
+   /*Enable Peripheral Direction pin*/
+   enableDirectionPin();
+
+   /* Enable PWM*/
+   enablePWM(period);
+
+    while(1)
+    {
+    	//Turn On Motor
+    	GPIOPinWrite(GPIO_PORTB_BASE, MotorDirection, MotorDirection);
+
+	    //Set PWM duty
+	    PWMPulseWidthSet(PWM1_BASE, PWM_OUT_5, duty);
+    }
+}
